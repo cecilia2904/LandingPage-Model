@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo como imagem -->
+            <div class="logo">
+                <a href="#">
+                    <img src="image.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+           
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <!-- Seção de destaque principal da página, com um título, uma mensagem de destaque e um botão de chamada para ação -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Titulo</h1>
+                    <p>Descrição sobre o que a landing page trata</p>
+                    <button class="btn">Subscribe</button>
+                </div>
+                <!-- Substituindo a imagem pelo vídeo -->
+                <div class="hero-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="download.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <!-- Content Section 2 -->
+    <section class="cards">
+        <div class="container">
+            <h2>Titulo</h2>
+            <div class="card">
+                <h3>Titulo</h3>
+                <p>Descrição</p>
+                <button class="btn">Action</button>
+            </div>
+            <div class="card">
+                <h3>Titulo</h3>
+                <p>Descrição</p>
+                <button class="btn">Action</button>
+            </div>
+            <div class="card">
+                <h3>Titulo</h3>
+                <p>Descrição</p>
+                <button class="btn">Action</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção de Imagem e Texto -->
+    <section class="image-text-section">
+        <div class="container">
+            <div class="image-text-content">
+                <!-- Imagem à esquerda -->
+                <div class="image-container">
+                    <img src="924915.png" alt="Imagem Descrição" class="image-left">
+                </div>
+                <!-- Texto à direita -->
+                <div class="text-container">
+                    <h2>Titulo</h2>
+                    <p>Descrição</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Titulo</h2>
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <h3>Básico</h3>
+                    <ul>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                    </ul>
+                    <p>R$ 99,00 mensal</p>
+                    <button class="btn">Contratar</button>
+                </div>
+                <!-- Basic Plan -->
+                <div class="pricing-card featured">
+                    <h3>Padrão</h3>
+                    <ul>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                    </ul>
+                    <p>R$ 199,90 mensal</p>
+                    <button class="btn">Contratar</button>
+                </div>
+                <!-- Pro Plan -->
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                        <li>Descrição</li>
+                    </ul>
+                    <p>R$ 399,90 mensal</p>
+                    <button class="btn">Contratar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção de Formulário de Contato com Texto à Esquerda -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Texto à Esquerda -->
+                <div class="contact-info">
+                    <h2>Titulo</h2>
+                    <p>Se você tem alguma dúvida ou quer saber mais sobre nossos serviços, entre em contato conosco. Estamos prontos para ajudar!</p>
+                </div>
+                <!-- Formulário à Direita -->
+                <div class="contact-form">
+                    <form action="your-backend-endpoint" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Balão Flutuante para Chatbot -->
+<div class="chatbot-container">
+    <button class="chatbot-button" id="chatbotToggle">
+        <!-- Coloque a imagem do chatbot aqui -->
+        <img src="11214763.png" alt="Chatbot" class="chatbot-icon">
+    </button>
+</div>
+
+<!-- Janela do Chatbot (inicialmente oculta) -->
+<div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+        <h4>Chatbot</h4>
+        <button class="close-chatbot" id="closeChatbot">×</button>
+    </div>
+    <div class="chatbot-body">
+        <p>Olá!Como posso te ajudar hoje?</p>
+        <!-- Aqui você pode integrar o sistema do chatbot real -->
+    </div>
+    <div class="chatbot-footer">
+        <input type="text" placeholder="Digite sua mensagem..." />
+        <button>Enviar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Footer Navigation Links -->
+            <ul class="footer-nav">
+                
+            </ul>
+
+            <!-- Copyright Section -->
+            <p class="footer-copyright">
+                Copyright &copy; 2024 <a href="#"></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

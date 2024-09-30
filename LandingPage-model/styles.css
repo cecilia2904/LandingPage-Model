@@ -1,0 +1,708 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Estilos */
+.navbar {
+    width: 100%;
+    background: rgba(238, 192, 192, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo do logo com imagem */
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-height: 50px;
+    width: auto;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links .action-btn {
+    background: rgba(238, 192, 192, 0.9);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links .action-btn:hover {
+    background: rgb(255, 255, 255);
+}
+
+/* Estilos para a seção Hero */
+.hero {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: rgba(238, 192, 192, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background: rgb(255, 255, 255);
+}
+
+.hero-video {
+    max-width: 45%; /* O vídeo ocupará 45% da largura da seção */
+    text-align: right;
+}
+
+.hero-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Content Section */
+.content, .cards, .pricing, .cta {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.content p, .cards .card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.cards .card {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Section */
+.pricing-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+
+/* Estilos da Seção de Imagem com Texto */
+.image-text-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.image-text-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Espaço entre imagem e texto */
+}
+
+.image-container {
+    flex-basis: 30%; /* A imagem ocupa 40% da largura */
+}
+
+.image-left {
+    width: 100%; /* A imagem ocupa toda a largura do seu container */
+    height: auto;
+    border-radius: 10px; /* Opcional: borda arredondada na imagem */
+}
+
+.text-container {
+    flex-basis: 55%; /* O texto ocupa 55% da largura */
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .image-text-content {
+        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
+        text-align: center;
+    }
+
+    .image-container, .text-container {
+        flex-basis: 100%; /* Ambos ocupam 100% da largura da tela */
+    }
+
+    .text-container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+
+/* Pricing Cards */
+.pricing-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.pricing-card p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.pricing-card .btn {
+    background: rgba(238, 192, 192, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.pricing-card .btn:hover {
+    background: rgba(238, 192, 192, 0.9);
+}
+
+
+/* Seção de Formulário de Contato com Texto à Esquerda */
+.contact-form-section {
+    padding: 60px 0;
+    background-color:rgba(238, 192, 192, 0.9);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info {
+    flex-basis: 45%;
+    text-align: left;
+}
+
+.contact-info h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+/* Formulário à Direita */
+.contact-form {
+    flex-basis: 50%;
+}
+
+.contact-form form {
+    max-width: 100%;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1454A3;
+    outline: none;
+}
+
+.contact-form .btn {
+    background-color: rgba(238, 192, 192, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.contact-form .btn:hover {
+    background-color: #ffae00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form .btn {
+        font-size: 1rem;
+    }
+}
+
+
+/* Estilos para o botão flutuante do Chatbot */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-button {
+    background-color: #1454A3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-button:hover {
+    background-color: #ffae00;
+}
+
+/* Estilos para o botão flutuante do Chatbot */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-button {
+    background-color: #1454A3;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px; /* Define a largura do botão */
+    height: 60px; /* Define a altura do botão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbot-button:hover {
+    background-color: rgba(238, 192, 192, 0.9);
+}
+
+.chatbot-icon {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: auto;
+    max-width: 40px; /* Largura máxima da imagem */
+    max-height: 40px; /* Altura máxima da imagem */
+}
+
+/* Janela do Chatbot */
+.chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none; /* Escondido por padrão */
+    z-index: 1001;
+}
+
+.chatbot-header {
+    background-color: #1454A3;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h4 {
+    margin: 0;
+}
+
+.close-chatbot {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chatbot-body {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chatbot-footer {
+    padding: 10px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbot-footer input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot-footer button {
+    background-color: #1454A3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-footer button:hover {
+    background-color: rgba(238, 192, 192, 0.9);
+}
+
+
+
+
+/* Destaque para o plano Basic */
+.featured {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white),rgba(238, 192, 192, 0.9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    transform: scale(1.05);
+}
+
+.featured h3 {
+    color: #F39323;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-text, .hero-video {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-video video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards .card, .pricing-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p, .pricing-card p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: white;
+    color: #111;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: rgba(238, 192, 192, 0.9);
+    color: white;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    color: #f06;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    margin-top: 20px;
+    color: #000000;
+}
+
+.footer-copyright a {
+    color: #f06;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    color: rgba(238, 192, 192, 0.9);
+}
